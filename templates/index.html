@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion Indicator</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+      <h1>Good {{messages['time']}}, {{messages['name']}} :)</h1>
+      <p>I hope you are having a wonderful day so far!</p>
+    
+    <main>
+    <form method="POST">
+  
+      <div class="form__fieldset">
+        <label for="emote" class="form__label">How do you feel today?</label>
+        <select name="emote" id="emote" class="form-select form-select">
+          <option selected>Open this select menu</option>
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Angry">Angry</option>
+          <option value="Hungry">Hungry</option>
+          <option value="Thirsty">Thirsty</option>
+          <option value="Nurse">Nurse Confirmation</option>
+        </select>
+        
+        <p>If you are the nurse responding, please use the "Nurse" option in the drop down to confirm {{messages['name']}}'s emotion</p>
+      </div>
+      <p>
+      <div class="form__fieldset">
+        <input
+          class="form__submit form__input-lg mb-3"
+          type="submit"
+          value="Submit Emotion :)"
+        />
+      </div>
+        <br></br>
+        The purpose of this program is to easily communicate your emotions to your nurse or doctor.
+      </p>
+      <p>
+        We know communicating emotions is hard for most people, especially in certain unavoidable sittuations.
+      </p>
+      <p>
+        Here are all of the corresponding LED Colors: 
+      </p>
+      
+      <table style="width:50%">
+        <tr>
+          <th class="shrink">Happy</th>
+          <td class="shrink">Green</th> 
+        </tr>
+        <tr>
+          <th class="shrink">Sad</th>
+          <td class="shrink">Blue</th> 
+        </tr>
+        <tr>
+          <th class="shrink">Angry</th>
+          <td class="shrink">Red</th> 
+        </tr>
+        <tr>
+          <th class="shrink">Hungry</th>
+          <td class="shrink">Yellow</th> 
+        </tr>
+        <tr>
+          <th class="shrink">Thirsty</th> 
+          <td class="shrink">Cyan</th>
+        </tr>
+      </table>
+      
+    </form>
+    </main>
+    <footer>
+      <p>Frank and Andy's CS 331 Project #3</p>
+    </footer>
+  </body>
+</html>
